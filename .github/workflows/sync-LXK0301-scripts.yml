@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-LXK9301-scripts
+name: sync-LXK0301-scripts
 on:
   schedule:
     - cron: '1 0,15 * * *'
@@ -9,7 +9,7 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: sync-LXK9301-scripts
+    types: sync-LXK0301-scripts
 jobs:
   repo-sync:
     env:
