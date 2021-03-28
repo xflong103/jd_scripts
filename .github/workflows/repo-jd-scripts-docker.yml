@@ -9,7 +9,7 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: sync-LXK0301-scripts
+    types: repo-LXK0301-scripts
 jobs:
   repo-sync:
     env:
