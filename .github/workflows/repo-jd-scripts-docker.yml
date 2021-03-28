@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: repo-lxk0301-scripts
+name: repo-jd-scripts-docker
 on:
   schedule:
     - cron: '1 0,15 * * *'
@@ -9,7 +9,7 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: repo-LXK0301-scripts
+    types: repo-jd-scripts-docker
 jobs:
   repo-sync:
     env:
