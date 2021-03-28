@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-nbzongzong-scripts
+name: repo-nbzongzong-scripts
 on:
   schedule:
     - cron: '5 8,20 * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-nbzongzong-scripts
+    types: repo-nbzongzong-scripts
 jobs:
   repo-sync:
     env:
