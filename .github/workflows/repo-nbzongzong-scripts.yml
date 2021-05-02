@@ -23,8 +23,8 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/nbzongzong/Actions.git"
-          source_branch: "main"
+          source_repo: "https://github.com/nbzongzong/J-Job.git"
+          source_branch: "master"
           destination_branch: "main" #按照自己仓库分支名称修改
           github_token: ${{ secrets.PAT || github.event.client_payload.PAT }}
           
