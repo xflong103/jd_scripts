@@ -24,7 +24,7 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/nbzongzong/J-Job.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "main" #按照自己仓库分支名称修改
           github_token: ${{ secrets.PAT || github.event.client_payload.PAT }}
           
